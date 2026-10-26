@@ -21,7 +21,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y gradle
 
       - name: Build APK
-        run: gradle assembleDebug
+        run: gradle :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
